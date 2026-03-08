@@ -122,6 +122,9 @@ button.ghost { background: var(--primarySoft); color: var(--primary); }
 }
 .mini-card span { color: var(--textSecondary); font-size: .9rem; }
 .split { display:grid; grid-template-columns: 280px 1fr; gap: 16px; margin-bottom: 18px; }
+.grid.two-col { display:grid; grid-template-columns: 280px 1fr; gap: 16px; margin-bottom: 18px; }
+.page-browse .search-box,
+.page-detail .search-box { max-width: 100%; }
 ul { padding-left: 18px; }
 table { width:100%; border-collapse: collapse; }
 th, td { border-bottom: 1px solid var(--border); padding: 8px; text-align:left; }
@@ -498,7 +501,7 @@ th, td { border-bottom: 1px solid var(--border); padding: 8px; text-align:left; 
 .black-footer .sep { opacity: .45; }
 
 @media (max-width: 900px) {
-  .hero, .split, .detail-grid, .stats-grid, .stats-grid.compact, .viz-grid, .chart-container.two, .summary-cards { grid-template-columns: 1fr; }
+  .hero, .split, .grid.two-col, .detail-grid, .stats-grid, .stats-grid.compact, .viz-grid, .chart-container.two, .summary-cards { grid-template-columns: 1fr; }
   .pie-layout { grid-template-columns: 1fr; }
   .structure-table #myViewer1, #myViewer1 { width: 100% !important; height: 420px !important; }
   .umap-embed { height: 560px; }

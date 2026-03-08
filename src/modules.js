@@ -181,10 +181,10 @@ export function renderVisualizationShowcase() {
     <article class="card viz-card" id="V-SC-001">
       <h3>Single-cell Embedding (UMAP/t-SNE)</h3>
       <p>Embedded local single-cell viewer:</p>
-      <p><a href="../singlecell-viewer/dist/" target="_blank" rel="noopener noreferrer">Open in new tab ↗</a></p>
+      <p><a href="./singlecell-viewer/dist/" target="_blank" rel="noopener noreferrer">Open in new tab ↗</a></p>
       <iframe
         title="Single-cell viewer"
-        src="../singlecell-viewer/dist/"
+        src="./singlecell-viewer/dist/"
         class="umap-embed"
         loading="lazy"
       ></iframe>
@@ -552,7 +552,7 @@ export async function initMolstarModule() {
   if (!container || !status || !loadBtn || !pdbInput) return;
 
   let viewer = null;
-  const localPdbUrl = '../pdbfiles/8k7w_RNA+only.pdb';
+  const localPdbUrl = './pdbfiles/8k7w_RNA+only.pdb';
 
   function renderLocalPdbTextFallback() {
     container.innerHTML = `<div class="mini-note">Mol* script unavailable. Local PDB path:</div><pre class="pdb-fallback">${localPdbUrl}</pre>`;

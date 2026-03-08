@@ -123,7 +123,7 @@ function renderFooter() {
 
 function homePage() {
   const activeThemeLabel = themeTokens[theme]?.label ?? 'Blue';
-  return `<main>
+  return `<main class="page-home">
     <section class="hero card">
       <div>
         <h1>RNAcentre unified template</h1>
@@ -174,7 +174,7 @@ function homePage() {
 }
 
 function browsePage() {
-  return `<main>
+  return `<main class="page-browse">
     <h1>Browse Datasets</h1>
     ${renderGlobalSearch()}
     <section class="grid two-col">${renderFacetPanel()}${renderResultList()}</section>
@@ -182,7 +182,7 @@ function browsePage() {
 }
 
 function detailPage() {
-  return `<main>
+  return `<main class="page-detail">
     <section class="card"><h1>C-ENTITY-001 Entity Header</h1><p>Entry ID: ${detailRecord.id} • Name: ${detailRecord.name} • Status: ${detailRecord.status}</p></section>
     <section class="card"><h2>Overview</h2><p>Organism: ${detailRecord.organism} • Family: ${detailRecord.family} • Updated: ${detailRecord.updated}</p><p>Sequence length: ${detailRecord.sequenceLength} nt • Context: ${detailRecord.genomicContext}</p></section>
     ${renderEvidenceTable()}
